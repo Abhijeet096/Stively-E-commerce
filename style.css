@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: rgb(155, 255, 40);
+    background-color: rgb(170, 255, 72);
     padding: 20px;
     display: flex;
 }
@@ -18,7 +18,11 @@ nav ul li a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: white;
+    color: rgba(255, 0, 0, 0.732);
+    font-weight:bold;
+}
+nav ul li a:hover{
+    color:red;
 }
 nav{
     display: flex;
@@ -56,4 +60,24 @@ nav{
     height: 100vh;
     width: 100vw;
     background-color: rgba(105, 1, 1, 0.34);
+}
+.sec-1-img-1{
+    animation: float 3s ease-in-out infinite;
+
+}
+.sec-1-img-1:hover {
+    transform: scale(1.05) translateY(-10px);
+   
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
